@@ -1,0 +1,98 @@
+/* Floating Brackets */
+.floating-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .brackets {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    animation: floatAnimation 6s infinite alternate ease-in-out;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-20px) translateX(20px);
+    }
+  }
+  
+  /* Random Positioning */
+  .brackets1 { top: 10%; left: 5%; }
+  .brackets2 { top: 30%; left: 20%; animation-duration: 5s; }
+  .brackets3 { top: 50%; left: 70%; animation-duration: 7s; }
+  .brackets4 { top: 70%; left: 40%; animation-duration: 6s; }
+  .brackets5 { top: 20%; left: 80%; animation-duration: 8s; }
+  .brackets6 { top: 60%; left: 15%; animation-duration: 9s; }
+  .brackets7 { top: 85%; left: 50%; animation-duration: 5.5s; }
+  .brackets8 { top: 40%; left: 60%; animation-duration: 6.5s; }
+  .brackets9 { top: 10%; left: 90%; animation-duration: 7.5s; }
+  .brackets10 { top: 80%; left: 30%; animation-duration: 8.5s; }
+  
+  /* More brackets */
+  .brackets11 { top: 25%; left: 15%; }
+  .brackets12 { top: 35%; left: 85%; }
+  .brackets13 { top: 65%; left: 25%; }
+  .brackets14 { top: 55%; left: 75%; }
+  .brackets15 { top: 5%; left: 60%; }
+  .brackets16 { top: 90%; left: 10%; }
+  .brackets17 { top: 45%; left: 50%; }
+  .brackets18 { top: 70%; left: 90%; }
+  .brackets19 { top: 95%; left: 70%; }
+  .brackets20 { top: 15%; left: 40%; }
+  
+  /* Static Logo */
+  .static-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+  }
+  
+  /* Typing Animation */
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    animation: typing 3s steps(15, end) infinite, blink 0.7s infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Animated Event Boxes */
+  .animate-box {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
